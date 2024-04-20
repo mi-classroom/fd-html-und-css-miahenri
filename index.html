@@ -5,11 +5,17 @@
 <head>
     <meta charset="utf-8">
     <title>ProjectSurvival4All </title>
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/fonts.css">
+    <link rel="stylesheet" href="./assets/styles/icons.css">
+    <link rel="stylesheet" href="./assets/styles/variables.css">
+    <link rel="stylesheet" href="./assets/styles/base.css">
+    <link rel="stylesheet" href="./assets/styles/components.css">
 </head>
 
 <body>
 
-    <header>
+    <header class = "main-header">
         <nav>
             <a href="/">
                 <img src="./assets/images/project-logo.JPG" alt="ProjectSurvival4All Logo" width="180"
@@ -19,7 +25,7 @@
     </header>
 
     <main>
-        <section>
+        <section class = "willkommen">
             <h1>Willkommen!</h1>
             <p>In der Bearbeitung von Projekten ist es von entscheidender Bedeutung, nicht nur theoretisches Wissen zu
                 besitzen, sondern auch praxiserprobte Methoden, bewährte Tricks und den souveränen Umgang mit müglichen
@@ -36,54 +42,59 @@
 
         <section>
             <h2>Favoriten</h2>
-            <ul>
-                <li>
-                    <p>Wie baue ich eine Präsentation auf?</p>
-                    <p>Monika Engelen</p>
+            <ul class=fav-list>
+                <li class=fav-item><span class="icon icon--xxl">folder</span>
+                    <div>
+                        <p>Wie baue ich eine Präsentation auf?</p>
+                        <address>Monika Engelen</adress>
+                    </div>
                 </li>
-                <li>
-                    <p>Wie erstelle ich eine Agenda?</p>
-                    <p>Raphaela Groten</p>
+                <li class=fav-item><span class="icon icon--xxl">description</span>
+                    <div>
+                        <p>Wie erstelle ich eine Agenda?</p>
+                        <address>Raphaela Groten</adress>
+                    </div>
                 </li>
-                <li>
-                    <p>Wie priorisiere ich (ein Backlog)?</p>
-                    <p>Raphaela Groten</p>
+                <li class=fav-item><span class="icon icon--xxl">description</span>
+                    <div>
+                        <p>Wie priorisiere ich (ein Backlog)?</p>
+                        <address>Raphaela Groten</adress>
+                    </div>
                 </li>
-                <li>
-                    <p>Wie halte ich einen Pitch?</p>
-                    <p>Monika Engelen</p>
+                <li class=fav-item><span class="icon icon--xxl">movie</span>
+                    <div>
+                        <p>Wie halte ich einen Pitch?</p>
+                        <address>Monika Engelen</adress>
+                    </div>
                 </li>
             </ul>
         </section>
 
         <section>
             <h2>Von deinem ILU Schreibtisch</h2>
-            <ul>
-                <li>Datenbanken 1</li>
-                <li>Kommunikationstechnik und Netze</li>
-                <li>Paradigmen der Programmierung</li>
-                <li>Audiovisuelles Medienprojekt</li>
-                <li>Grundlagen des Web</li>
-                <li>Screendesign</li>
-                <li>Datenbanken 1</li>
+            <ul class = fav-list>
+                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Datenbanken 1</li> 
+                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Kommunikationstechnik und Netze</li>
+                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Paradigmen der Programmierung</li>
+                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Audiovisuelles Medienprojekt</li>
+                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Grundlagen des Web</li>
+                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Screendesign</li>
+                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Datenbanken 1</li>
             </ul>
         </section>
 
         <section>
             <h2>Verlauf</h2>
-            <ul>
+            <ul class = fav-list>
                 <li>
-                    <article>
-                        <header>
-                            <time datetime="2024-02-02T04:14:54-08:00"> 02. Februar 2024</time>
+                    <article class= "card-grid">
+                        <figure>
+                            <img src="./assets/images/pitch-strukturieren-resized-2.jpg" alt="Wie-halte-ich-einen-Pitch">
+                        </figure>
+                        <section>
                             <h3>Wie halte ich einen Pitch?</h3>
                             <p>Monika Engelen</p>
-                        </header>
-                        <img src="./assets/images/pitch-strukturieren-resized.heic" alt="Wie-halte-ich-einen-Pitch">
-
-                        <section>
-                            <h4>Tags</h4>
-                            <ul>
+                            <ul class="tag-list">
                                 <li>Pitch</li>
                                 <li>StartUp</li>
                                 <li>Überzeugen</li>
@@ -96,16 +107,12 @@
                 </li>
 
                 <li>
-                    <article>
-                        <header>
-                            <time datetime="2024-02-02T04:14:54-08:00">02. Februar 2024</time>
+                    <article class= "card-grid">
+                        <img src="./assets/images/agenda-resized-3.jpg" alt="Agenda">
+                        <section>
                             <h3>Wie erstelle ich eine Agenda?</h3>
                             <p>Raphaela Groten</p>
-                        </header>
-                        <img src="./assets/images/agenda-resized.heic" alt="Agenda">
-                        <section>
-                            <h4>Tags</h4>
-                            <ul>
+                            <ul class="tag-list">
                                 <li>Gruppenarbeit</li>
                                 <li>Meeting</li>
                                 <li>ToDos</li>
@@ -115,16 +122,12 @@
                 </li>
 
                 <li>
-                    <article>
-                        <header>
-                            <time datetime="2024-02-02T04:14:54-08:00">02. Februar 2024</time>
+                    <article class= "card-grid">
+                        <img src="./assets/images/finanzen-moeglichkeiten-resized-1.jpg" alt="Finanzierungsoptionen für Startups">
+                        <section>
                             <h3>Welche Finanzierungsoptionen stehen einem Startup zur Verfügung?</h3>
                             <p>Max Mustermann</p>
-                        </header>
-                        <img src="./assets/images/finanzen-moeglichkeiten-resized.heic" alt="Finanzierungsoptionen für Startups">
-                        <section>
-                            <h4>Tags</h4>
-                            <ul>
+                            <ul class="tag-list">
                                 <li>Überzeugen</li>
                                 <li>Pitch</li>
                                 <li>Finanzierung</li>
@@ -135,16 +138,12 @@
                 </li>
 
                 <li>
-                    <article>
-                        <header>
-                            <time datetime="2024-02-02T04:14:54-08:00">02. Februar 2024</time>
+                    <article class= "card-grid">
+                        <img src="./assets/images/stress-managment-resized-1.jpg" alt="Stressbewältigung">
+                        <section>
                             <h3>Wie bewältige ich Stress?</h3>
                             <p>Max Mustermann</p>
-                        </header>
-                        <img src="./assets/images/stress-managment-resized.heic" alt="Stressbewältigung">
-                        <section>
-                            <h4>Tags</h4>
-                            <ul>
+                            <ul class="tag-list">
                                 <li>Stress</li>
                                 <li>Bewältigung</li>
                                 <li>Gesundheit</li>
@@ -158,11 +157,11 @@
 
     </main>
 
-    <footer>
-        <ul>
+    <footer class = "main-footer">
+        <ul class = fav-list>
             <li>
                 <h4>Barrierefreiheit</h4>
-                <ul>
+                <ul class = "fav-list">
                     <li>leichte Sprache 1</li>
                     <li>leichte Sprache 2</li>
                 </ul>
@@ -170,7 +169,7 @@
 
             <li>
                 <h4>Feedback</h4>
-                <ul>
+                <ul class = "fav-list">
                     <li>Verbesserungsvorschläge</li>
                     <li>Content Vorschläge</li>
                     <li>Feedback Umfrage</li>
@@ -179,7 +178,7 @@
 
             <li>
                 <h4>Rechtliche Informationen</h4>
-                <ul>
+                <ul class = "fav-list">
                     <li>Verantwortliche</li>
                     <li>Impressum</li>
                     <li>Datenschutzhinweise</li>

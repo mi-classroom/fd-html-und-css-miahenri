@@ -1,0 +1,129 @@
+/* Fav List
+---------------------------------------------------------------------------- */
+
+.fav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Fav Item
+---------------------------------------------------------------------------- */
+
+.fav-item {
+  background-color: var(--color-lightest);
+  padding: var(--s) var(--m) var(--s) var(--s);
+  position: relative;
+  margin: var(--xxs);
+  display: flex;
+  align-items: center;
+
+  &::before{
+    position: absolute;
+    font-size: var(--xxl);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: var(--l);
+    top: 0;
+    bottom: 0;
+  }
+
+  p, address{
+    margin: 0;
+    font-style: normal;
+    margin-left: var(--xxs);
+    line-height: var(--lh-tight);
+  }
+
+  p{
+    font-weight: var(--fw-medium);
+  }
+
+  address{
+    font-size: var(--s);
+    margin-top: var(--xxs);
+  }
+}
+
+/* Cards
+---------------------------------------------------------------------------- */
+
+.card-grid{
+    background-color: var(--color-lightest);
+    margin: var(--xxs);
+
+    img{
+      width: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+    }
+
+    h3{
+      padding-top: var(--s);
+      padding-left: var(--s);
+    }
+
+    p{
+      font-size: var(--s);
+      padding-bottom: var(--xxs);
+      padding-left: var(--s);
+    }
+}
+
+/* Cards
+---------------------------------------------------------------------------- */
+
+.tag-list{
+  margin-left: var(--s);
+
+	li{
+    font-size: var(--s);
+		background-color: var(--color-light);
+		display: inline-block;
+		padding: var(--quat);
+    margin-bottom: var(--half);
+	}
+}
+
+/* Main Header
+---------------------------------------------------------------------------- */
+
+.main-header{
+    background-color: var(--color-lightest);
+    padding: var(--xxl) var(--xxs);
+}
+
+/* Willkommen Box
+---------------------------------------------------------------------------- */
+
+.willkommen{
+    color: var(--color-lightest);
+    background-color: var(--color-orange);
+    padding: var(--m);
+    margin: var(--s);
+    line-height: var(--l)
+}
+
+/* Main Footer
+---------------------------------------------------------------------------- */
+
+.main-footer{
+  background-color: gray;
+  color: var(--color-lightest);
+
+  h4{
+    padding-top: var(--m);
+    padding-left: var(--s);
+  }
+
+  ul{
+    margin-left: var(--s);
+    padding-top: var(--quat);
+    padding-bottom: var(--s);
+
+    li{
+      padding-top: var(--quat);
+    }
+  }
+}
