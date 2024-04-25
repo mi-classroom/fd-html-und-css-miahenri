@@ -4,6 +4,6 @@
 }
 
 @font-face {
-  font-family: "material-icons";
+  font-family: material-icons;
   src: url("../fonts/Material_Icons/font/MaterialIconsOutlined-Regular.otf") format("opentype");
 }

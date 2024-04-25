@@ -2,6 +2,7 @@
   display: inline-block;
   width: auto;
   height: auto;
+  margin-right: var(--xxs);
   direction: ltr;
   font-family: var(--ff-icons);
   font-feature-settings: "liga";
@@ -16,7 +17,6 @@
   vertical-align: bottom;
   white-space: nowrap;
   word-wrap: normal;
-  margin-right: var(--xxs);
 }
 
 .has-icon::before {
@@ -39,32 +39,32 @@
   word-wrap: normal;
 }
 
-.icon--s {
+.icon-s {
   font-size: var(--s);
   line-height: var(--s);
 }
 
-.icon--m {
+.icon-m {
   font-size: var(--m);
   line-height: var(--m);
 }
 
-.icon--l {
+.icon-l {
   font-size: var(--l);
   line-height: var(--l);
 }
 
-.icon--xl {
+.icon-xl {
   font-size: var(--xl);
   line-height: var(--xl);
 }
 
-.icon--xxl {
+.icon-xxl {
   font-size: var(--xxl);
   line-height: var(--xxl);
 }
 
-.icon--xxxl {
+.icon-xxxl {
   font-size: var(--xxxl);
   line-height: var(--xxxl);
 }
@@ -72,7 +72,7 @@
 .icon.md-dark { color: var(--lightest); }
 .icon.md-light { color: var(--darkest); }
 
-.icon--inline {
+.icon-inline {
   margin-right: var(--xs);
   font-size: var(--m);
 }
@@ -81,4 +81,4 @@
   content: attr(data-icon);
 }
 
-.icon--video::before { content: "smart_display"; }
+.icon-video::before { content: "smart_display"; }

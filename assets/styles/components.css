@@ -1,9 +1,23 @@
-/* Fav List
+/* Listen
 ---------------------------------------------------------------------------- */
 
-.fav-list {
-  margin: 0;
+.flex-list {
+  display: inline-flex;
+  flex-wrap: wrap;
   padding: 0;
+  margin: var(--xxs);
+  gap: var(--xxs);
+  list-style: none;
+}
+
+
+.list {
+  display: grid;
+  padding: 0;
+  margin: var(--xxs) var(--xxs) 0 var(--xxs);
+  gap: var(--xxs);
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   list-style: none;
 }
 
@@ -11,28 +25,28 @@
 ---------------------------------------------------------------------------- */
 
 .fav-item {
-  background-color: var(--color-lightest);
-  padding: var(--s) var(--m) var(--s) var(--s);
   position: relative;
-  margin: var(--xxs);
   display: flex;
   align-items: center;
+  padding: var(--s) var(--m) var(--s) var(--s);
+  margin: 0;
+  background-color: var(--color-lightest);
 
   &::before{
     position: absolute;
-    font-size: var(--xxl);
+    top: 0;
+    bottom: 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: var(--xxl);
     line-height: var(--l);
-    top: 0;
-    bottom: 0;
   }
 
-  p, address{
+  div, p, address{
     margin: 0;
-    font-style: normal;
     margin-left: var(--xxs);
+    font-style: normal;
     line-height: var(--lh-tight);
   }
 
@@ -41,17 +55,31 @@
   }
 
   address{
-    font-size: var(--s);
     margin-top: var(--xxs);
+    font-size: var(--s);
   }
 }
 
 /* Cards
 ---------------------------------------------------------------------------- */
+.card-list {
+  display: grid;
+  align-items: stretch;
+  margin: var(--xxs);
+  gap: var(--m);
+  grid-auto-rows: 1fr;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
 
-.card-grid{
+/* .card-list li{
+  margin-right: var(--s);
+  margin-bottom: var(--xl);
+  margin-left: var(--s);
+} */
+
+.card-item{
+    margin: 0;
     background-color: var(--color-lightest);
-    margin: var(--xxs);
 
     img{
       width: 100%;
@@ -65,24 +93,24 @@
     }
 
     p{
-      font-size: var(--s);
       padding-bottom: var(--xxs);
       padding-left: var(--s);
+      font-size: var(--s);
     }
 }
 
-/* Cards
+/* Tag Liste
 ---------------------------------------------------------------------------- */
 
 .tag-list{
   margin-left: var(--s);
 
 	li{
-    font-size: var(--s);
-		background-color: var(--color-light);
 		display: inline-block;
 		padding: var(--quat);
     margin-bottom: var(--half);
+		background-color: var(--color-light);
+    font-size: var(--s);
 	}
 }
 
@@ -90,18 +118,30 @@
 ---------------------------------------------------------------------------- */
 
 .main-header{
+    padding: var(--m) var(--l);
     background-color: var(--color-lightest);
-    padding: var(--xxl) var(--xxs);
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      margin-top: var(--m);
+      list-style: none;
+    }
+
+    li {
+      flex: 1;
+      text-align: center;
+    }
 }
 
 /* Willkommen Box
 ---------------------------------------------------------------------------- */
 
 .willkommen{
-    color: var(--color-lightest);
+    padding: var(--s);
+    margin: var(--l);
     background-color: var(--color-orange);
-    padding: var(--m);
-    margin: var(--s);
+    color: var(--color-lightest);
     line-height: var(--l)
 }
 
@@ -109,7 +149,7 @@
 ---------------------------------------------------------------------------- */
 
 .main-footer{
-  background-color: gray;
+  background-color: var(--color-dark);
   color: var(--color-lightest);
 
   h4{
@@ -118,9 +158,9 @@
   }
 
   ul{
-    margin-left: var(--s);
     padding-top: var(--quat);
     padding-bottom: var(--s);
+    margin-left: var(--s);
 
     li{
       padding-top: var(--quat);

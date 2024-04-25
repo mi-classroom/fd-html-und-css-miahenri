@@ -15,17 +15,21 @@
 
 <body>
 
-    <header class = "main-header">
+    <header class="main-header">
         <nav>
             <a href="/">
-                <img src="./assets/images/project-logo.JPG" alt="ProjectSurvival4All Logo" width="180"
-                    height="43">
+                <img src="./assets/images/project-logo.JPG" alt="ProjectSurvival4All Logo" width="180" height="43">
             </a>
         </nav>
+        <ul>
+            <li>Mein Bereich</li>
+            <li>Suche</li>
+            <li>Aktuelles</li>
+        </ul>
     </header>
 
     <main>
-        <section class = "willkommen">
+        <section class="willkommen">
             <h1>Willkommen!</h1>
             <p>In der Bearbeitung von Projekten ist es von entscheidender Bedeutung, nicht nur theoretisches Wissen zu
                 besitzen, sondern auch praxiserprobte Methoden, bewährte Tricks und den souveränen Umgang mit müglichen
@@ -42,26 +46,26 @@
 
         <section>
             <h2>Favoriten</h2>
-            <ul class=fav-list>
-                <li class=fav-item><span class="icon icon--xxl">folder</span>
+            <ul class=list>
+                <li class=fav-item><span class="icon icon-xxl">folder</span>
                     <div>
                         <p>Wie baue ich eine Präsentation auf?</p>
                         <address>Monika Engelen</adress>
                     </div>
                 </li>
-                <li class=fav-item><span class="icon icon--xxl">description</span>
+                <li class=fav-item><span class="icon icon-xxl">description</span>
                     <div>
                         <p>Wie erstelle ich eine Agenda?</p>
                         <address>Raphaela Groten</adress>
                     </div>
                 </li>
-                <li class=fav-item><span class="icon icon--xxl">description</span>
+                <li class=fav-item><span class="icon icon-xxl">description</span>
                     <div>
                         <p>Wie priorisiere ich (ein Backlog)?</p>
                         <address>Raphaela Groten</adress>
                     </div>
                 </li>
-                <li class=fav-item><span class="icon icon--xxl">movie</span>
+                <li class=fav-item><span class="icon icon-xxl">smart_display</span>
                     <div>
                         <p>Wie halte ich einen Pitch?</p>
                         <address>Monika Engelen</adress>
@@ -72,24 +76,25 @@
 
         <section>
             <h2>Von deinem ILU Schreibtisch</h2>
-            <ul class = fav-list>
-                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Datenbanken 1</li> 
-                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Kommunikationstechnik und Netze</li>
-                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Paradigmen der Programmierung</li>
-                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Audiovisuelles Medienprojekt</li>
-                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Grundlagen des Web</li>
-                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Screendesign</li>
-                <li class = fav-item><span class = "icon icon--xxl"> folder</span>Datenbanken 1</li>
+            <ul class=flex-list>
+                <li class=fav-item><span class="icon icon-xxl"> folder</span>Datenbanken 1</li>
+                <li class=fav-item><span class="icon icon-xxl"> folder</span>Kommunikationstechnik und Netze</li>
+                <li class=fav-item><span class="icon icon-xxl"> folder</span>Paradigmen der Programmierung</li>
+                <li class=fav-item><span class="icon icon-xxl"> folder</span>Audiovisuelles Medienprojekt</li>
+                <li class=fav-item><span class="icon icon-xxl"> folder</span>Grundlagen des Web</li>
+                <li class=fav-item><span class="icon icon-xxl"> folder</span>Screendesign</li>
+                <li class=fav-item><span class="icon icon-xxl"> folder</span>Datenbanken 1</li>
             </ul>
         </section>
 
         <section>
             <h2>Verlauf</h2>
-            <ul class = fav-list>
-                <li>
-                    <article class= "card-grid">
+            <ul class=card-list>
+                <li class="card-item">
+                    <article>
                         <figure>
-                            <img src="./assets/images/pitch-strukturieren-resized-2.jpg" alt="Wie-halte-ich-einen-Pitch">
+                            <img src="./assets/images/pitch-strukturieren-resized-2.jpg"
+                                alt="Wie-halte-ich-einen-Pitch">
                         </figure>
                         <section>
                             <h3>Wie halte ich einen Pitch?</h3>
@@ -106,8 +111,8 @@
                     </article>
                 </li>
 
-                <li>
-                    <article class= "card-grid">
+                <li class="card-item">
+                    <article>
                         <img src="./assets/images/agenda-resized-3.jpg" alt="Agenda">
                         <section>
                             <h3>Wie erstelle ich eine Agenda?</h3>
@@ -121,9 +126,10 @@
                     </article>
                 </li>
 
-                <li>
-                    <article class= "card-grid">
-                        <img src="./assets/images/finanzen-moeglichkeiten-resized-1.jpg" alt="Finanzierungsoptionen für Startups">
+                <li class="card-item">
+                    <article>
+                        <img src="./assets/images/finanzen-moeglichkeiten-resized-1.jpg"
+                            alt="Finanzierungsoptionen für Startups">
                         <section>
                             <h3>Welche Finanzierungsoptionen stehen einem Startup zur Verfügung?</h3>
                             <p>Max Mustermann</p>
@@ -137,8 +143,8 @@
                     </article>
                 </li>
 
-                <li>
-                    <article class= "card-grid">
+                <li class="card-item">
+                    <article>
                         <img src="./assets/images/stress-managment-resized-1.jpg" alt="Stressbewältigung">
                         <section>
                             <h3>Wie bewältige ich Stress?</h3>
@@ -157,11 +163,11 @@
 
     </main>
 
-    <footer class = "main-footer">
-        <ul class = fav-list>
+    <footer class="main-footer">
+        <ul class=list>
             <li>
                 <h4>Barrierefreiheit</h4>
-                <ul class = "fav-list">
+                <ul class="fav-list">
                     <li>leichte Sprache 1</li>
                     <li>leichte Sprache 2</li>
                 </ul>
@@ -169,7 +175,7 @@
 
             <li>
                 <h4>Feedback</h4>
-                <ul class = "fav-list">
+                <ul class="fav-list">
                     <li>Verbesserungsvorschläge</li>
                     <li>Content Vorschläge</li>
                     <li>Feedback Umfrage</li>
@@ -178,7 +184,7 @@
 
             <li>
                 <h4>Rechtliche Informationen</h4>
-                <ul class = "fav-list">
+                <ul class="fav-list">
                     <li>Verantwortliche</li>
                     <li>Impressum</li>
                     <li>Datenschutzhinweise</li>
