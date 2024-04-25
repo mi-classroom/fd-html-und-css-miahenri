@@ -119,6 +119,7 @@
 
 .main-header{
     padding: var(--m) var(--l);
+    padding-bottom: 0;
     background-color: var(--color-lightest);
 
     ul {
@@ -130,8 +131,71 @@
 
     li {
       flex: 1;
+      padding: var(--s);
       text-align: center;
     }
+    
+    li:hover {
+        background-color: var(--color-light);
+    }
+
+    nav {
+      display: flex;
+      max-width: 80rem;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      .icon-xxl {
+        padding-right: 0;
+      }
+
+      ul {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+        .search-bar {
+          display: flex;
+          width: 15rem;
+          justify-content: space-between;
+          padding: var(--s);
+          margin: var(--l) auto;
+          background-color: var(--color-light);
+    
+          .icon {
+            background-color: var(--color-orange);
+          }
+        }
+}
+
+@media screen and (width >= 750px) {
+  .main-header nav .icon-xxl {
+    display: none;
+  }
+
+  .main-header nav .menu-replacement {
+    display: block;
+  }
+}
+
+@media screen and (width <= 750px) {
+  .main-header nav .menu-replacement {
+    display: none;
+  }
+}
+
+@media screen and (width <= 900px){
+  .main-header nav .search-bar {
+    display: none;
+  }
+}
+
+@media screen and (width >= 900px){
+  main .search-bar {
+    display: none;
+  }
 }
 
 /* Willkommen Box
@@ -165,5 +229,17 @@
     li{
       padding-top: var(--quat);
     }
+  }
+}
+
+.search-bar {
+  display: flex;
+  max-width: 25rem;
+  justify-content: space-between;
+  margin: var(--l) auto;
+  background-color: var(--color-lightest);
+
+  .icon {
+    background-color: var(--color-orange);
   }
 }

@@ -2,7 +2,7 @@
   display: inline-block;
   width: auto;
   height: auto;
-  margin-right: var(--xxs);
+  margin-right: 0;
   direction: ltr;
   font-family: var(--ff-icons);
   font-feature-settings: "liga";
