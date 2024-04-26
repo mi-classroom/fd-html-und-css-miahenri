@@ -241,11 +241,10 @@
 /* stylelint-disable-next-line no-descending-specificity */
 .search-bar {
   display: flex;
-  max-width: 25rem;
   align-items: center;
   justify-content: space-between;
   padding: 0;
-  margin: var(--l) auto;
+  margin: var(--l);
   background-color: var(--color-lightest);
 
   p {
