@@ -1,0 +1,30 @@
+:root{
+  --ff-icons: material-icons;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+  --lh-tight: 100%;
+  --lh-normal: 130%;
+  --lh-loose: 150%;
+  --base-font-size: calc(1rem * 0.08);
+  --xxxs: 5px;
+  --xxs: 8px;
+  --xs: 10px;
+  --s:  12px;
+  --m: 16px;
+  --l: 20px;
+  --xl: 24px;
+  --xxl: 32px;
+  --xxxl: 40px;
+  --color-light: #e8e8e8;
+  --color-lightest: #fff;
+  --color-dark: #6c6c6c;
+  --color-orange: #ea5b0c;
+  --color-black: #000;
+  --color-pink: #b62584;
+  --color-rot: #c60c0f;
+  --color-blue: #4285f4;
+  --quat: 4px;
+  --half: 8px;
+}

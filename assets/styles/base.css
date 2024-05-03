@@ -1,0 +1,39 @@
+*{
+  box-sizing: border-box;
+}
+
+html, body{
+  background-color: var(--color-light);
+  font-family: "source-sans-3", Arial, sans-serif;
+  font-size: var(--m);
+  font-weight: var(--fw-regular);
+}
+
+main > *{
+    padding: var(--m);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--fw-bold);
+}
+
+
+h1{
+  margin-top: var(--xxs);
+  margin-bottom: var(--s);
+  font-size: var(--xl);
+}
+
+h2{
+  margin-left: var(--xxs);
+  font-size: var(--l)
+}
+
+h3{
+  font-size: var(--m);
+}
+
+main, footer{
+  max-width: 80rem;
+  margin: 0 auto;
+}

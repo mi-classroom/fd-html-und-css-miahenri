@@ -1,0 +1,71 @@
+/* compositions
+############################################################################ */
+
+.horizontal-flow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--xs);
+  }
+  
+  /* utlities
+  ############################################################################ */
+  
+  .p-m {
+    padding: var(--m);
+  }
+  
+  /* filter section
+  ############################################################################ */
+  
+  .filter-section {
+    margin: var(--m);
+    background-color: var(--color-white);
+  
+    /* align bottom right */
+    .filter-section-actionbar {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: var(--m);
+      gap: var(--xs); 
+    }
+  
+    h2 {
+      margin-bottom: 0;
+    }
+  
+    h3 {
+      margin-bottom: var(--quarter);
+    }
+  }
+  
+  /* buttons
+  ############################################################################ */
+  
+  .button {
+    padding: var(--half) var(--m);
+    border: none;
+    cursor: pointer;
+    transition: background-color var(--tr-normal);
+  
+    &[data-state="active"] {
+      font-weight: var(--fw-bold);
+    }
+  }
+  
+  .button-primary {
+    background-color: var(--color-grey);
+  
+    &:hover {
+      background-color: var(--color-grey-medium);
+    }
+  }
+  
+  .button-secondary {
+    background-color: var(--color-th-pink);
+    color: var(--color-white);
+  
+    &:hover {
+      background-color: var(--color-th-pink-lighter);
+    }
+  }
+  
