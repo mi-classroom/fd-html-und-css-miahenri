@@ -28,6 +28,22 @@ function initFilters() {
     });
 }
 
+/* function initButtons() {
+    const responsePromise = fetch(articleListURL); //fetch holt sich die Daten von der URL
+    responsePromise.then(function(response){ //then reagiert erst wenn Response ausgeführt wurde
+        const dataPromise = response.json(); //json() gibt ein Promise zurück
+        dataPromise.then(function(data){ //then reagiert erst wenn data ausgeführt wurde und löst Promise auf
+            currentData = data;
+            currentData.articles.map(function(article) {
+
+                const buttons = article.tags.keywords.map(function(keyword) {
+                    return `<button data-js-filter="${keyword}">${keyword}</button>`;
+                });
+            });
+        });
+    });
+} */
+
 function filterArticles(filterValue) {
     const filteredArticles = currentData.articles.filter(function(article) {
         return article.tags.keywords.includes(filterValue);
@@ -57,4 +73,29 @@ function renderArticleList(articles) {
 
     articleListElement.innerHTML = cards;
     console.log(cards);
+}
+
+function initFilters() {
+    const filterSection = document.querySelector('[data-js-category="keywords"]');
+    const allTags = currentData.articles.reduce((tags, article) => {
+        article.tags.keywords.forEach(tag => {
+            if (!tags.includes(tag)) {
+                tags.push(tag);
+            }
+        });
+        return tags;
+    }, []);
+
+    const filterButtonsHTML = allTags.map(tag => `<button class="button button-primary" data-js-filter="${tag}">${tag}</button>`).join('');
+
+    filterSection.innerHTML = filterButtonsHTML; 
+
+    const filterButtons = document.querySelectorAll('[data-js-category="keywords"] [data-js-filter]');
+    filterButtons.forEach(button => {
+        button.addEventListener('click', event => {
+            const filter = event.currentTarget.getAttribute('data-js-filter');
+            const filteredArticles = filterArticles(filter);
+            renderArticleList(filteredArticles);
+        });
+    });
 }
