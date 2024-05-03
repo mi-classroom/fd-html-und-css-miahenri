@@ -16,10 +16,25 @@ function createArticles() {
 
 function renderArticleList(articles) {
     articleListElement = document.querySelector('[data-js-generate-articleList]');
-    const authors = articles.map(function(article) {
-        console.log(article);
-        return `<li>${article.author}</li>`;
+    const cards = articles.map(function(article) {
+        return `<li>
+            <figure>
+            <img src="./images/${article.teaserImg}">
+            <figcaption>
+                <h3>${article.title} </h3>
+                <address>${article.author}</address>
+            </figcaption>
+            </figure>
+        </li>`;
     }).join('');
-    articleListElement.innerHTML = authors;
-    console.log(authors);
+
+    articleListElement.innerHTML = cards;
+    console.log(cards);
+
+    // const authors = articles.map(function(article) {
+    //     console.log(article);
+    //     return `<li>${article.author}</li>`;
+    // }).join('');
+    // articleListElement.innerHTML = authors;
+    // console.log(authors);
 }
