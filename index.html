@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/styles/variables.css">
     <link rel="stylesheet" href="./assets/styles/base.css">
     <link rel="stylesheet" href="./assets/styles/components.css">
+    <link rel="stylesheet" href="./assets/styles/filter-sections.css">
 </head>
 
 <body>
@@ -34,11 +35,18 @@
             </span>
             <button class="icon icon-xxl" data-js-main-menu-trigger>menu</button>
         </nav>
-        <ul>
-            <li>Mein Bereich</li>
-            <li>Suche</li>
-            <li>Aktuelles</li>
+        <ul class="tab-navigation">
+            <li class="tab-link is-active" data-tab="mein-bereich">Mein Bereich</li>
+            <li class="tab-link" data-tab="suche">Suche</li>
+            <li class="tab-link" data-tab="aktuelles">Aktuelles</li>
         </ul>
+
+        <ul class="main-menu" data-js-main-menu>
+            <li><a href="./news.html">News</a></li>
+            <li><a href="./pages/about/about-the-lecturers.html">Barrierefreiheit</a></li>
+            <li><a href="./login.html">Login</a></li>
+            <li><a href="#">DE</a></li>
+          </ul>
     </header>
 
     <main>
@@ -213,6 +221,7 @@
         </ul>
     </footer>
 
+    <script src="./assets/scripts/main.js"></script>
 </body>
 
 </html>
