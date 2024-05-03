@@ -18,15 +18,15 @@
   ############################################################################ */
   
   .filter-section {
-    background-color: var(--color-white);
     margin: var(--m);
+    background-color: var(--color-white);
   
     /* align bottom right */
     .filter-section-actionbar {
       display: flex;
-      gap: var(--xs);
+      justify-content: flex-end;
       padding-top: var(--m);
-      justify-content: flex-end; 
+      gap: var(--xs); 
     }
   
     h2 {
@@ -42,10 +42,10 @@
   ############################################################################ */
   
   .button {
+    padding: var(--half) var(--m);
     border: none;
     cursor: pointer;
     transition: background-color var(--tr-normal);
-    padding: var(--half) var(--m);
   
     &[data-state="active"] {
       font-weight: var(--fw-bold);
@@ -61,8 +61,8 @@
   }
   
   .button-secondary {
-    color: var(--color-white);
     background-color: var(--color-th-pink);
+    color: var(--color-white);
   
     &:hover {
       background-color: var(--color-th-pink-lighter);

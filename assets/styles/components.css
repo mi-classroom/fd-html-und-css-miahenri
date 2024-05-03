@@ -247,6 +247,7 @@
   margin: var(--l);
   background-color: var(--color-lightest);
 
+  /* stylelint-disable-next-line no-descending-specificity */
   p {
     padding: var(--s);
   }
@@ -262,17 +263,17 @@
 ---------------------------------------------------------------------------- */
 
 .main-menu {
-  display: flex;
-  gap: var(--l);
-  flex-direction: column;
   position: fixed;
-  padding: var(--xl);
-  background-color: var(--color-grey);
-  height: calc(100vh - var(--xl) * 2);
-  width: 200px;
+  z-index: 10;
   top: 0;
   left: 0;
-  z-index: 10;
+  display: flex;
+  width: 200px;
+  height: calc(100vh - var(--xl) * 2);
+  flex-direction: column;
+  padding: var(--xl);
+  background-color: var(--color-grey);
+  gap: var(--l);
   transform: translateX(-100%);
   transition: transform var(--tr-normal);
 

@@ -5,6 +5,7 @@ html, body{
   hyphens: auto;
   line-height: var(--lh-normal);
 }
+
 a {
   color: var(--color-black);
   font-weight: var(--fw-medium);

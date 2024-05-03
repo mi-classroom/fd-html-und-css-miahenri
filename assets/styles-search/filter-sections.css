@@ -1,4 +1,6 @@
-/* compositions
+/* stylelint-disable order/properties-order */
+/* stylelint-disable order/properties-order
+ compositions
 ############################################################################ */
 
 .horizontal-flow {
@@ -115,5 +117,7 @@
     margin-bottom: 0;
     background-color: var(--color-grey);
     font-size: var(--s);
+    /* stylelint-disable-next-line declaration-block-no-shorthand-property-overrides */
+    margin: var(--quarter);
   }
 }
